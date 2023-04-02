@@ -29,7 +29,7 @@ jobs:
           --health-timeout 5s
           --health-retries 5
         ports:
-          - 5434:5432
+          - 5432:5432
 
     steps:
     - name: Set up Go
