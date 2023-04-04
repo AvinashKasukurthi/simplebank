@@ -24,10 +24,8 @@
 
 VERSION="2.2.4"
 
-echo "Running wait-for"
-
 set -- "$@" -- "$TIMEOUT" "$QUIET" "$PROTOCOL" "$HOST" "$PORT" "$result"
-TIMEOUT=60
+TIMEOUT=15
 QUIET=0
 # The protocol to make the request with, either "tcp" or "http"
 PROTOCOL="tcp"
