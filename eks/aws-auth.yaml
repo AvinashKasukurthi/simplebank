@@ -8,4 +8,4 @@ data:
     - userarn: arn:aws:iam::408778922111:user/github-ci
       username: github-ci
       groups:
-        - system:masters  
+        - system:masters
