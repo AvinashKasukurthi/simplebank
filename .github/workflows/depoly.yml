@@ -40,7 +40,7 @@ jobs:
           docker push -a $REGISTRY/$REPOSITORY
 
       - name: Update kube config
-        run: aws eks update-kubeconfig --name simplebank --region ap-south-1
+        run: aws eks update-kubeconfig --name simple-bank --region ap-south-1
 
       - name: Deploy image to Amazon EKS
         run: |
