@@ -38,6 +38,7 @@ jobs:
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -t $REGISTRY/$REPOSITORY:latest .
           docker push -a $REGISTRY/$REPOSITORY
+
       - name: Update kube config
         run: aws eks update-kubeconfig --name simplebank --region ap-south-1
 
